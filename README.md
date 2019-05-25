@@ -1,11 +1,22 @@
-# 新建版本库
-  + git init 初始化版本库
-  + git add *.* 添加文件到版本库
-  + git commit -m "xxx" 提交到版本库
+# 基础概念
 
-# Clone 版本库
+每一份 Git 版本库均包含着此版本库所有文件的所有修改及提交历史，远程和本地的区别只是存在的位置不同。
 
+## 新建版本库
 
-# 安装 Visual Studio Code 扩展
-  * 源代码管理
-  * GitLens
+  1. git init —— 初始化版本库，此时什么事情都还未发生，仅仅是建立了空的版本库
+  2. git add <file> —— 添加文件到版本库，告诉 Git 对哪些文件进行监控
+  3. git commit -m "xxx" —— 提交到版本库，将改变提交到版本库成为最新的文件版本，参数 m 后为提交说明
+
+## Clone 版本库
+
+## 查看版本库状态
+
+    1. git status 或可视化管理器 —— 此命令会详细列出所有文件的修改情况
+    2. git diff <file> —— 此命令会详细列出此文件的修改情况，按 q 退出
+
+## 安装 Visual Studio Code 扩展
+
+  1. Git Project Manager —— 可视化进行源代码管理
+  2. GitLens —— 跟踪版本库，提示每一行代码版本历史
+  3. Git History —— 可视化浏览版本历史记录
